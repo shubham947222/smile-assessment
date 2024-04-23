@@ -18,14 +18,21 @@
 
 body {
   color: #000000;
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    ) */
+  /* rgb(var(--background-start-rgb)); */
 }
 
+.th-login-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 94% 0, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 94% 0, 75% 100%, 0% 100%);
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
