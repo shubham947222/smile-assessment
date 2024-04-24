@@ -24,7 +24,7 @@ export default function Home() {
     e.preventDefault();
     console.log(formData);
     axios
-      .post("https://9axs9r.tunnel.pyjam.as/apiV1/lead-info/", formData)
+      .post("https://ay9j83.tunnel.pyjam.as/apiV1/lead-info/", formData)
       .then((res) => console.log(res, "res"))
       .catch((err) => console.log(err));
 
@@ -36,12 +36,12 @@ export default function Home() {
   };
 
   return (
-    <div class="flex border-gray-300">
+    <div class="flex border-gray-300 justify-center items-center">
       <div
-        class="w-1/2 h-screen bg-cover bg-center relative flex justify-center items-center"
+        class="w-1/2 h-screen bg-cover bg-center relative  justify-center items-center hidden sm:flex"
         style={{
           backgroundImage:
-            "url('https://plus.unsplash.com/premium_photo-1681996484614-6afde0d53071?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "url('https://plus.unsplash.com/premium_photo-1702598773834-be6d566bb57f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
           clipPath: "polygon(0 0, 100% 0, 85% 85%, 82% 100%, 0 100%)",
         }}
       >
@@ -51,7 +51,7 @@ export default function Home() {
           Have a smile on your <br /> face...
         </p>
       </div>
-      <div className="w-full flex flex-col  justify-center max-w-md h-100 mx-auto  rounded-lg  p-8">
+      <div className="w-full flex flex-col    max-w-md h-100 mx-auto  rounded-lg  p-8">
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <input
